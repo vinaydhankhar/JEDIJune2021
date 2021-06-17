@@ -2,12 +2,12 @@
 #include<stdio.h>
 
 
-void helloworld();
+void greeting(char name[]);
 int main(){
-	helloworld();
+	char name[]="Alia Bhatt";
+	helloworld(name);
 }
 
-void helloworld(){
-	printf("hello world");
-	printf("hi everyone");
+void helloworld(char name[]){
+	printf("Hey, where was you? .. %s",name);
 }
